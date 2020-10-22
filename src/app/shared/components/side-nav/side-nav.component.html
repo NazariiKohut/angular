@@ -1,0 +1,19 @@
+<aside>
+  <div class="navigation-menu">
+    <img class="logo" src="maxresdefault.jpg" alt="">
+    <h3>John Doe</h3>
+    <nav>
+      <li *ngFor="let l of linkLists">
+        <a href="">
+          <img [src]= l.logo alt="">
+          {{
+          l.name
+          }}
+        </a>
+      </li>
+    </nav>
+  </div>
+  <div class="bottom-button">
+    <a href="">Go back</a>
+  </div>
+</aside>
