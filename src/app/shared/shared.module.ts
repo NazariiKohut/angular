@@ -14,7 +14,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 @NgModule({
     declarations: [AvatarComponent, SideNavComponent, TextBlockComponent, ExperienceComponent, EducationComponent, ContactsComponent, FeeedbacksComponent, SkillsComponent],
     exports: [
-        SideNavComponent
+        SideNavComponent,
+        TextBlockComponent
     ],
     imports: [
         CommonModule
