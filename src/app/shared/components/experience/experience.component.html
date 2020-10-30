@@ -1,1 +1,15 @@
-<p>experience works!</p>
+<section class="experience">
+  <h2>Experience</h2>
+  <div class="main-experience-content">
+    <div class="main-experience-item" *ngFor="let exp of myExperience">
+      <p>
+        {{exp.expYear}}
+      </p>
+      <h3>{{exp.companyName}}</h3>
+      <p>
+        {{exp.description}}
+      </p>
+    </div>
+  </div>
+</section>
+

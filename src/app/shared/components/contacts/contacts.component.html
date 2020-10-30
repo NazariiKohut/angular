@@ -1,1 +1,14 @@
-<p>contacts works!</p>
+<section class="contacts">
+  <h2>Contacts</h2>
+  <ul>
+    <li><img src="assets/...">
+      <div class="contact__info"><span>0951166093</span></div>
+    </li>
+    <li><img src="assets/...">
+      <div class="contact__info"><span>Ihor_Kolobov911@email.com</span></div>
+    </li>
+    <li *ngFor="let contacts of contacts"><img [src]=contacts.contactPhoto>
+      <div class="contact__info"><span>{{contacts.contactName}}</span><a href="#">{{contacts.contactLink}}</a></div>
+    </li>
+  </ul>
+</section>

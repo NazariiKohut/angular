@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-feeedbacks',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feeedbacks.component.css']
 })
 export class FeeedbacksComponent implements OnInit {
+  @Input() feedback;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

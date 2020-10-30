@@ -1,1 +1,14 @@
-<p>education works!</p>
+<section class="education">
+  <h2>Education</h2>
+  <div class="main-education-content">
+    <div class="main-education-item" *ngFor="let edc of education">
+      <p>
+        {{edc.edYear}}
+      </p>
+      <h3>Title</h3>
+      <p>
+        {{edc.edDescription}}
+      </p>
+    </div>
+  </div>
+</section>

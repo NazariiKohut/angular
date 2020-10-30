@@ -6,6 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./text-block.component.css']
 })
 export class TextBlockComponent implements OnInit {
+  @Input() aboutMe;
   constructor() { }
 
   ngOnInit(): void {

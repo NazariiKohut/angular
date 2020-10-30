@@ -1,8 +1,14 @@
 <section class="all">
   <app-side-nav [linkLists]="linkList"></app-side-nav>
-<!--  <section class="main-content">-->
-<!--    <div class="content">-->
-<!--      <app-text-block [aboutMe]="aboutMe"></app-text-block>-->
-<!--    </div>-->
-<!--  </section>-->
+  <section class="main-content">
+    <div class="content">
+      <app-text-block [aboutMe]="aboutMe"></app-text-block>
+      <app-experience [myExperience]="myExperience"></app-experience>
+      <app-education [education]="education" ></app-education>
+      <app-skills [skills]="skills"></app-skills>
+      <app-feeedbacks [feedback]="feedback"></app-feeedbacks>
+      <app-contacts [contacts]="contacts"></app-contacts>
+      <button (click)="openDialog()" class="test__button">Dialogue window</button>
+    </div>
+  </section>
 </section>

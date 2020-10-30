@@ -1,1 +1,16 @@
-<p>feeedbacks works!</p>
+<section class="feedback">
+  <h2>Feedback</h2>
+  <ul>
+    <li *ngFor="let feed of feedback">
+      <div class="blackBlocks">
+        {{feed.blackBlocks}}
+      </div>
+      <div class="whiteBlocks">
+        <img src="assets/Chris_Hemsworth_as_Thor.jpg"/>
+        <span>Nazarii Kohut</span>
+        <span>Develop</span>
+        <a href="#">{{feed.whiteBlocks}}</a>
+      </div>
+    </li>
+  </ul>
+</section>
